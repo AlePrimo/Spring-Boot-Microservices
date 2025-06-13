@@ -23,6 +23,16 @@ public class InmuebleDAOImpl implements InmuebleDAO{
     }
 
     @Override
+    public Inmueble getInmuebleByName(String nombre) {
+        return this.inmuebleRepository.getInmuebleByName(nombre);
+    }
+
+    @Override
+    public Inmueble getInmuebleByAdress(String direccion) {
+        return this.inmuebleRepository.getInmuebleByAdress(direccion);
+    }
+
+    @Override
     public void saveInmueble(Inmueble inmueble) {
 
         this.inmuebleRepository.save(inmueble);
