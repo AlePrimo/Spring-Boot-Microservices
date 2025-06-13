@@ -3,9 +3,11 @@ package com.docker_curso.__inmueble.persistence;
 import com.docker_curso.__inmueble.model.Inmueble;
 import com.docker_curso.__inmueble.respository.InmuebleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class InmuebleDAOImpl implements InmuebleDAO{
 
      @Autowired
